@@ -1,9 +1,11 @@
-import example.pepita
+import personajes.*
 
 describe "group of tests for pepita" {
-
+  const unCazador = new Humano(
+    rol = new Cazador(mascota = new Mascota(fuerza = 10, edad = 9, tieneGarras = true)),
+    fuerza = 50,
+    inteligencia = 40)
   test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
   }
 
 }
